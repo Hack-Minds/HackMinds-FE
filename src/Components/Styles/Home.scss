@@ -1,0 +1,5 @@
+@import '../../Vars.scss';
+
+.home__container {
+    @include container(85%)
+}

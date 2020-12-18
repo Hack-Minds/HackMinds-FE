@@ -1,0 +1,32 @@
+@import '../../Vars.scss';
+
+.hero__container {
+    @include container(100%);
+    @include cards;
+    display: flex;
+    // border: 1px solid red;
+    justify-content: space-between;
+    padding: 5em;
+    // min-height: 400px;
+    align-items: center;
+}
+
+.hero__logo--container {
+
+}
+
+.hero__logo {
+    width: 180px;
+}
+
+.hero__slogan--container {
+    max-width: 300px;
+}
+
+.hero__slogan {
+    font-size: 1.3em;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+}
