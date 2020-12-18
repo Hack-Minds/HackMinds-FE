@@ -1,12 +1,12 @@
 import React from 'react'
 import '../App.scss'
 
-import Login from '../Pages/Login'
+import EditDeck from '../Pages/EditDeck'
 
 function App() {
   return (
     <div>
-      <Login />
+      <EditDeck />
     </div>
   )
 }

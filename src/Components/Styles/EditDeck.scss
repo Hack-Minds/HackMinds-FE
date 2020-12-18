@@ -1,0 +1,26 @@
+@import '../../Vars.scss';
+
+.editDeck {
+  @include container(1350px);
+
+  &--grid {
+    @include grid(2);
+    grid-gap: 4em;
+  }
+
+
+  &--form {
+    @include cards;
+    padding: 2em;
+    height: 400px;
+  }
+
+  &--cards {
+    
+    &-scroll {
+      height: 80vh;
+      overflow: scroll;
+      overflow-x: auto;
+    }
+  }
+}

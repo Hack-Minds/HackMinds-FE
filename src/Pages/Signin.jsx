@@ -5,7 +5,7 @@ import '../components/Styles/Login.scss'
 
 import logo from '../assets/logo-vert.svg'
 
-function Login() {
+function Signin() {
   return (
     <div className='formContainer'>
       <div className='form'>
@@ -19,11 +19,10 @@ function Login() {
             <label>Contraseña</label>
             <Input placeholder='Contraseña' type='password' />
           </div>
-          <Button textButton='Login' />
+          <Button textButton='Crear Cuenta' />
         </form>
         <div>
-          <a>Regístrate</a>
-          <a>¿Olvidaste tu contraseña?</a>
+          <a>Log In</a>
         </div>
       </div>
 
@@ -31,4 +30,4 @@ function Login() {
   )
 }
 
-export default Login
+export default Signin
