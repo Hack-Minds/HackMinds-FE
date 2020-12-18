@@ -5,8 +5,7 @@ import Login from '../Pages/Login'
 function App() {
   return (
     <div>
-      App funciona
-     <Login></Login>
+      <Login />
     </div>
   )
 }

@@ -1,0 +1,12 @@
+@import '../../Vars.scss';
+
+.dashboardCard {
+  @include cards;
+  max-width: auto;
+  padding: 1em 2em;
+  text-align: center;
+
+  h2 {
+    @include title;
+  }
+}

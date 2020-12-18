@@ -1,0 +1,17 @@
+@import '../../Vars.scss';
+
+.previewCard {
+  @include cards;
+  padding: .5em;
+  margin: 1em;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  h3 {
+    max-width: 120px;
+  }
+  p {
+    max-width: 370px;
+  }
+}
