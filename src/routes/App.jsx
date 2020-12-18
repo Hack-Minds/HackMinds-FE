@@ -3,6 +3,7 @@ import '../App.scss'
 import NavBar from '../Components/NavBar'
 import Login from '../Pages/Login'
 import Home from '../Pages/Home'
+// import PlayDeck from '../Components/PlayDeck'
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <NavBar></NavBar>
       <Home />
       <Login />
+      {/* <PlayDeck /> */}
     </div>
   )
 }
