@@ -1,0 +1,19 @@
+nav {
+    // border: 1px solid red;
+    width: 100%;
+    // position: fixed;
+    top: 0;
+    padding: 1em 2em;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+.useractions__container {
+    padding-right: 1em;
+}
+.username {
+    font-weight: bold;
+
+}

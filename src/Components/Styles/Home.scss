@@ -1,0 +1,23 @@
+@import '../../Vars.scss';
+
+.home__container {
+    @include container(85%)
+}
+
+.homemenu__container {
+    // border: 1px solid yellow;
+    @include container(100%);
+}
+.homemenu__list{
+    margin: 0;
+    // border: 1px solid green;
+    list-style-type: none;
+    padding: 1em 2em 1em 1em;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.homemenu__item {
+    display: inline-block;
+    // border: 1px solid blue;
+}
