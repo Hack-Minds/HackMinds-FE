@@ -2,16 +2,21 @@ import React from 'react'
 import Button from '../components/Inputs/Button'
 import '../components/Styles/Login.scss'
 
+import logo from '../assets/logo-vert.svg'
+
 function Login() {
   return (
-    <div>
-      <div className='formContainer'>
+    <div className='formContainer'>
+      <div className='form'>
+        <img src={logo} />
         <form>
           <div>
-            <input placeholder='e-mail' />
+            <label>E-mail</label>
+            <input placeholder='E-mail' />
           </div>
           <div>
-            <input placeholder='password' />
+            <label>Contraseña</label>
+            <input placeholder='Contraseña' />
           </div>
           <Button textButton='Login' />
         </form>
