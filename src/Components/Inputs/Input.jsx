@@ -1,10 +1,15 @@
 import React from 'react'
 import '../Styles/Input.scss'
 
-const Input = (props) => {
+const Input = ({ type, placeholder, name, ref }) => {
     return (
 
-        <input type={props.type} placeholder={props.placeholder} />
+        <input
+            type={type}
+            placeholder={placeholder}
+            name={name}
+            ref={ref}
+        />
 
     )
 }

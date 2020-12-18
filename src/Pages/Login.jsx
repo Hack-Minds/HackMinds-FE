@@ -1,28 +1,65 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Input from '../Components/Inputs/Input'
+import { useForm } from 'react-hook-form'
+
+// import Input from '../Components/Inputs/Input'
 import Button from '../components/Inputs/Button'
 import '../components/Styles/Login.scss'
 
 import logo from '../assets/logo-vert.svg'
+import Input from '../Components/Inputs/Input'
 
 function Login() {
+  const { register, handleSubmit } = useForm()
+
+  const handleLogin = (data, e) => {
+    // console.log(data)
+    fetch('http://3.129.13.14:8000/login/', {
+      method: 'POST',
+      body: JSON.stringify(data),
+      headers: {
+        // 'Content-type': 'multipart/form-data'
+        'Content-type': 'application/json'
+      },
+    })
+      .then(response => response.json())
+      .then(data => console.log(data.token))
+    e.target.reset()
+  }
+
   return (
     <div className='formContainer'>
       <div className='form'>
         <Link to='/'>
           <img src={logo} />
         </Link>
-        <form>
+        <form onSubmit={handleSubmit(handleLogin)}>
           <div>
             <label>Usuario</label>
-            <Input placeholder='Usuario' type='text' />
+            <input
+              placeholder='Nombre de usuario'
+              type='text'
+              name='username'
+              ref={register}
+            />
+
           </div>
           <div>
             <label>Contraseña</label>
-            <Input placeholder='Contraseña' type='password' />
+            <input
+              placeholder='Contraseña'
+              type='password'
+              name='password'
+              ref={register}
+            />
           </div>
-          <Button textButton='Login' />
+          {/* <Button
+            textButton='Login'
+            type='submit'
+            onSubmit={handleSubmit(handleLogin)}
+          /> */}
+          {/* <input type='submit' /> */}
+          <button type='submit'>Entrar</button>
         </form>
         <div>
           <Link to='/signin'>Regístrate</Link>

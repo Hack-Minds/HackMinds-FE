@@ -39,3 +39,7 @@ form {
   justify-content: space-evenly;
   align-items: center;
 }
+
+button {
+  @include base-button;
+}

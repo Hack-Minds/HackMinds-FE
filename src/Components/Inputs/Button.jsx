@@ -1,9 +1,9 @@
 import React from 'react'
 import '../Styles/Button.scss'
 
-function Button({ textButton }) {
+function Button({ textButton, type }) {
   return (
-    <button className='buttonBase'>
+    <button className='buttonBase' type={type}>
       {textButton}
     </button>
   )
