@@ -1,11 +1,11 @@
 import React from 'react'
 import '../Styles/PreviewCard.scss'
 
-function PreviewCard() {
+function PreviewCard({ concept, definition }) {
   return (
     <div className='previewCard'>
-      <h3>Concepto figk vbdui</h3>
-      <p>nvjrw burevhruh nrvhrouhb nopnbveuhb ngouprnphre nuorepnberub nvupvrvh nuvpbveru9be cbwilcvbwiuv bvuivbiuvg buwivbwiuvg buippwivrehvpourehvoevñohveñohver uverhr nuvohprouhr nuvphwruhrw</p>
+      <h3>{concept}</h3>
+      <p>{definition}</p>
     </div>
   )
 }
