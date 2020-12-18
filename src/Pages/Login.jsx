@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useHistory } from 'react-router-dom'
 import { useForm } from 'react-hook-form'
 
 // import Input from '../Components/Inputs/Input'
@@ -11,6 +11,7 @@ import Input from '../Components/Inputs/Input'
 
 function Login() {
   const { register, handleSubmit } = useForm()
+  const history = useHistory()
 
   const handleLogin = (data, e) => {
     // console.log(data)
@@ -18,12 +19,16 @@ function Login() {
       method: 'POST',
       body: JSON.stringify(data),
       headers: {
-        // 'Content-type': 'multipart/form-data'
         'Content-type': 'application/json'
       },
     })
       .then(response => response.json())
-      .then(data => console.log(data.token))
+      .then(res => {
+        sessionStorage.setItem('Token', res.token)
+        sessionStorage.setItem('Usuario', data.username)
+        history.push('/dashboard')
+      })
+
     e.target.reset()
   }
 
