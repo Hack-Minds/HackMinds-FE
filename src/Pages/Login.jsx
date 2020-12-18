@@ -1,4 +1,5 @@
 import React from 'react'
+import Input from '../Components/Inputs/Input'
 import Button from '../components/Inputs/Button'
 import '../components/Styles/Login.scss'
 
@@ -11,12 +12,12 @@ function Login() {
         <img src={logo} />
         <form>
           <div>
-            <label>E-mail</label>
-            <input placeholder='E-mail' />
+            <label>Usuario</label>
+            <Input placeholder='Usuario' type='text' />
           </div>
           <div>
             <label>Contraseña</label>
-            <input placeholder='Contraseña' />
+            <Input placeholder='Contraseña' type='password' />
           </div>
           <Button textButton='Login' />
         </form>

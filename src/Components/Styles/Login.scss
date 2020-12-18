@@ -7,15 +7,18 @@
 
 .form {
   @include cards;
-  height: 550px;
+  height: 600px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
 
+  img {
+    margin-bottom: 1em;
+  }
+
   label {
     display: block;
-    margin-top: .75em;
     font-weight: bold;
   }
 

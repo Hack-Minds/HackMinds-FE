@@ -1,12 +1,12 @@
 import React from 'react'
 import '../App.scss'
 
-import CreateDeck from '../Pages/CreateDeck'
+import Login from '../Pages/Login'
 
 function App() {
   return (
     <div>
-      <CreateDeck />
+      <Login />
     </div>
   )
 }
