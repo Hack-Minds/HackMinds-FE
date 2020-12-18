@@ -1,7 +1,9 @@
 @import '../../Vars.scss';
 
 .previewCard {
-  @include cards;
+  // @include cards;
+  background: $bg-gray;
+  border-radius: 1em;
   padding: .5em;
   margin: 1em;
   display: flex;
