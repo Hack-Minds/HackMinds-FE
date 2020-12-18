@@ -19,10 +19,12 @@
   },
   "homepage": "https://github.com/Hack-Minds/HackMinds-FE#readme",
   "dependencies": {
+    "@sweetalert/with-react": "^0.1.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-hook-form": "^6.13.1",
-    "react-router-dom": "^5.2.0"
+    "react-router-dom": "^5.2.0",
+    "sweetalert": "^2.1.2"
   },
   "devDependencies": {
     "@babel/core": "^7.12.10",

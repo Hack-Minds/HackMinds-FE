@@ -4,6 +4,7 @@ import { useForm } from 'react-hook-form'
 import Input from '../Components/Inputs/Input'
 import Button from '../components/Inputs/Button'
 import '../components/Styles/Login.scss'
+import swal from '@sweetalert/with-react';
 
 import logo from '../assets/logo-vert.svg'
 
@@ -22,6 +23,14 @@ function Signin() {
     })
       .then(response => response.json())
       .then(data => console.log(data))
+      .catch(
+        swal(
+          <div>
+            <h1>Error!</h1>        
+            <p>Ocurió un error al registrarte</p>
+          </div>
+        )
+      )
     e.target.reset()
   }
 
