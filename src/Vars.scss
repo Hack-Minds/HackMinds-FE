@@ -1,0 +1,46 @@
+//Variables del proyecto
+
+//Fonts
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+$main-font: 'Inter', sans-serif;
+
+//Colors
+$primary-color: #6FCF97;
+$bg-gray: #F0F0F0;
+
+$shadow-box: 0px 4px 120px 26px rgba(0, 0, 0, 0.19);
+
+
+@mixin base-button () {
+  border: none;
+  padding: 0.667rem;
+  margin: 0.800rem;
+  width: auto;
+  border-radius: 10px;
+  font-family: inherit;
+  font-weight: bold;
+  cursor: pointer;
+  color: white;
+  background: $primary-color;
+}
+
+@mixin cards {
+  background: $bg-gray;
+  box-shadow: $shadow-box;
+  border-radius: 1em;
+}
+
+@mixin title {
+  font-weight: bold;
+}
+
+@mixin container($max-width) {
+  display: grid;
+  grid-template-columns: minmax(auto, $max-width);
+  justify-content: center;
+}
+
+@mixin grid($colums) {
+  display: grid;
+  grid-template-columns: repeat($colums, minmax(auto, 1fr));
+}
