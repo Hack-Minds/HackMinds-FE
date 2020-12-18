@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import Input from '../Components/Inputs/Input'
 import Button from '../components/Inputs/Button'
 import '../components/Styles/Login.scss'
@@ -9,7 +10,9 @@ function Signin() {
   return (
     <div className='formContainer'>
       <div className='form'>
-        <img src={logo} />
+        <Link to='/'>
+          <img src={logo} />
+        </Link>
         <form>
           <div>
             <label>Usuario</label>
