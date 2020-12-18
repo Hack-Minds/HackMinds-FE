@@ -1,0 +1,39 @@
+@import '../../Vars.scss';
+
+.flashcard__container {
+    @include container(85%);
+    @include cards;
+    // border: 1px solid red;
+    padding: 2em;
+    width: 500px;
+    margin: 1em auto;
+    position: relative;
+}
+
+.card__title {
+    text-align: center;
+}
+.card__button {
+    text-align: center;
+}
+h1 {
+    border: 1px solid red;
+}
+.card__checkbox {
+    text-align: center;
+}
+.control__left , .control__right {
+    position: absolute;
+}
+.control__left {
+    border: 1px solid red;
+    left: -80px;
+    top: 50%;
+    bottom: 50%;
+}
+.control__right {
+    border: 1px solid blue;
+    right: -80px;
+    top: 50%;
+    bottom: 50%;
+}
