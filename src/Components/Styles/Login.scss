@@ -1,0 +1,14 @@
+@import '../../Vars.scss';
+
+.formContainer {
+  @include cards;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  a {
+    display: block;
+    margin-bottom: .5em;
+  }
+}
