@@ -1,7 +1,7 @@
 import React from 'react'
-import Button from '../components/Inputs/Button'
+// import Button from '../components/Inputs/Button'
 import { useForm } from 'react-hook-form'
-import Input from '../Components/Inputs/Input'
+// import Input from '../Components/Inputs/Input'
 import '../components/Styles/CreateDeck.scss'
 
 function CreateDeck() {
